@@ -1,0 +1,44 @@
+/* Hero Styling */
+.hero-image {
+  background-color: var(--color-gray-100);
+}
+
+.hero-caption {
+  color: var(--color-gray-800B);
+}
+
+.hero-caption:hover {
+  color: var(--color-gray-600);
+}
+
+.hero-passage {
+  width: 35rem;
+  margin: auto;
+  line-height: 2rem;
+}
+
+.hero-passage p {
+  font-size: 1.25rem;
+}
+
+
+/* Page Specific Settings */
+#writing .hero-content {
+  width: 15rem;
+}
+
+#creative-writing .hero-content {
+    width: 25rem;
+}
+
+#creative-writing .hero-passage {
+    font-size: 2rem;
+}
+
+#persuasive-writing .hero-content {
+    width: 28rem;
+}
+
+#technical-writing .hero-content {
+    width: 28rem;
+}

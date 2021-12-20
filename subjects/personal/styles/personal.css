@@ -1,0 +1,16 @@
+/* Hero Styling */
+#personal .hero-image {
+  background-image: url(/subjects/personal/images/hero.jpg);
+}
+
+#personal .hero-content {
+  width: 22rem;
+}
+
+#personal .hero-caption {
+  color: var(--color-gray-100);
+}
+
+#personal .hero-caption:hover {
+  color: var(--color-gray-200);
+}

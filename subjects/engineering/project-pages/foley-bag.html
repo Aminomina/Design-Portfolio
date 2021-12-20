@@ -1,0 +1,91 @@
+<!-- TEMPLATE PROJECT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <title>TITLE</title>
+    <!-- Code to link header and footer files -->
+    <script  
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header></header>
+    <div id="background"></div>
+    <!-- Website Background (not in main flow) -->
+    <main>
+      <ul class="entry-list">
+        <li class="entry">
+          <div class="sub-entry">
+            <!-- Sub-entry 1 -->
+            <div class="text-box">
+              <article>
+                <h2>Title (Year)</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat fugiat sequi fuga ipsum nulla. Voluptatibus eaque unde
+                  illo minus tempora, sunt, mollitia ipsam totam animi, nemo
+                  temporibus. Modi, tenetur inventore!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  vero aspernatur harum cum eveniet? Suscipit officia odit
+                  reiciendis consectetur, labore minima aut, aliquam, corrupti
+                  quis pariatur necessitatibus dolorem officiis iste.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/foley-bag-01.jpg"
+                alt="A pair of magnetically aligning buckles"
+                class="entry-image-h"
+              />
+              <p class="caption">Caption</p>
+            </div>
+          </div>
+          <div class="sub-entry">
+            <!-- Sub-entry 2 -->
+            <div class="image-box">
+              <img
+                src="../images/foley-bag-02.jpg"
+                alt="A pair of magnetically aligning buckles"
+                class="entry-image-h"
+              />
+              <p class="caption">Caption</p>
+            </div>
+            <div class="text-box">
+              <article>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat fugiat sequi fuga ipsum nulla. Voluptatibus eaque unde
+                  illo minus tempora, sunt, mollitia ipsam totam animi, nemo
+                  temporibus. Modi, tenetur inventore!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  vero aspernatur harum cum eveniet? Suscipit officia odit
+                  reiciendis consectetur, labore minima aut, aliquam, corrupti
+                  quis pariatur necessitatibus dolorem officiis iste.
+                </p>
+              </article>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>

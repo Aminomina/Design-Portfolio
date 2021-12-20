@@ -1,0 +1,197 @@
+/* SHARED STYLING */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@600;700&family=Merriweather&display=swap');
+/* Default Site Styling */
+html {
+  --color-gray-100: rgb(236, 232, 232);
+  --color-gray-200: rgb(196, 187, 179);
+  --color-gray-600: rgb(145, 118, 118);
+  --color-gray-800: rgb(88, 82, 82);
+  --color-gray-800B: rgb(73, 65, 65);
+
+  --color-brown-800: rgb(143, 112, 112);
+
+  background-color: var(--color-gray-800);
+}
+
+body {
+  font-family: serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Cormorant", serif;
+  color: var(--color-gray-800);
+}
+
+h3 {
+  font-family: "Cormorant", serif;
+  color: var(--color-gray-800);
+}
+
+p {
+  color: var(--color-gray-800B);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brown-800);
+  font-weight: bold;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 10rem;
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-800B),
+    var(--color-gray-800)
+  );
+  box-shadow: 2px 2px 8px var(--color-gray-800);
+}
+
+h1 {
+  text-align: center;
+  padding: 1.1rem;
+  margin: 0;
+}
+
+h1 a {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--color-gray-200);
+  font-size: 3.5rem;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+header span {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 1px;
+  background-color: var(--color-gray-200);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0.7rem 0;
+  width: 55rem;
+  margin: auto;
+}
+
+nav a {
+  font-family: "Cormorant", serif;  font-size: 1.4rem;
+  color: var(--color-gray-200);
+}
+
+nav a:hover {
+  color: var(--color-gray-100);
+}
+
+#selected {
+  color: var(--color-gray-100);
+}
+
+/* Hero Styling */
+.hero {
+  height: calc(100vh - 12.5rem);
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-content {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-800B),
+    var(--color-gray-800)
+  );
+  color: var(--color-gray-100);
+  border-radius: 6px;
+  font-size: 2.5rem;
+  padding: 0.25rem;
+  margin: 0 2rem;
+  position: relative;
+  top: 2rem;
+  box-shadow: 2px 2px 5px var(--color-gray-800B);
+}
+
+.hero-caption {
+  text-align: right;
+  margin: 0.5rem 1rem;
+  font-size: 1.1rem;
+}
+
+.hero-bar {
+  text-align: right;
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-800B),
+    var(--color-gray-800)
+  );
+  margin: 0;
+  color: var(--color-gray-200);
+  font-size: 1rem;
+  height: 2.5rem;
+  /* padding: 1rem 2rem; */
+  box-shadow: 2px 2px 8px var(--color-gray-800);
+}
+
+/* Background Styling */
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-600),
+    var(--color-gray-200)
+  );
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-800B),
+    var(--color-gray-800)
+  );
+  padding: 1rem;
+  box-shadow: 2px 4px 8px var(--color-gray-800);
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 1rem;
+}
+
+footer a {
+  color: var(--color-gray-200);
+}
+
+footer a:hover {
+  color: var(--color-gray-100);
+}

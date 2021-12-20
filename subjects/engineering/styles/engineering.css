@@ -1,0 +1,16 @@
+/* Hero Styling */
+#engineering .hero-image {
+  background-image: url(/subjects/engineering/images/hero.png);
+}
+
+#engineering .hero-content {
+  width: 20rem;
+}
+
+#engineering .hero-caption {
+  color: var(--color-gray-100);
+}
+
+#engineering .hero-caption:hover {
+  color: var(--color-gray-200);
+}

@@ -1,0 +1,67 @@
+<!-- ENGINEERING -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/grid.css" />
+    <link rel="stylesheet" href="styles/engineering.css">
+    <title>Engineering</title>
+    <!-- Code to link header and footer files -->
+    <script  
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header></header>
+    <section class="hero" id="engineering">
+      <div class="hero-image">
+        <h2 class="hero-content">Engineering</h2>
+        <a class="hero-caption" href="">"pixelDoggo" Game Console (2020, coded in C)</a>
+      </div>
+      <div class="hero-bar">
+      </div>
+    </section>
+    <div id="background"></div>
+    <!-- Website Background (not in main flow) -->
+    <main>
+      <ul class="card-array">
+        <li class="card">
+          <!-- Foley Catheter Bag System -->
+          <a
+            href="project-pages/foley-bag.html"
+            class="card-link-img"
+          >
+            <img
+              src="images/foley-bag-01.jpg"
+              alt="A pair of magnetically aligning buckles"
+            />
+          </a>
+          <div class="card-text">
+            <div>
+              <h2>Foley Catheter Bag System</h2>
+              <p>
+                For my first freshman design project in college, my team and I
+                worked with the Shirley Ryan Ability Lab in Chicago to develop a
+                foley catheter bag system that could easily be used by people
+                with limited dexterity.
+              </p>
+            </div>
+            <a href="project-pages/foley-bag.html" class="see-more">See more...</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>

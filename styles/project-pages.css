@@ -1,0 +1,108 @@
+/* Project Page Styling */
+.entry-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    background-color: var(--color-gray-100);
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px var(--color-gray-800);
+}
+
+.sub-entry {
+    display: flex;
+    justify-content: space-between;
+    width: 55rem;
+    margin: 0;
+    padding: 2rem 3rem;
+}
+
+.text-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45rem;
+    margin: 0;
+    padding: 2rem 3rem;
+}
+
+.text-entry h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-entry h3 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.text-entry p {
+    margin: 0.5rem 0;
+}
+
+/* Formatting for links placed within entries */
+.entry-link {
+    margin: 1rem 0;
+}
+
+/* Larger margin in text entries to offset smaller p margins */
+.text-entry .entry-link {
+    margin: 1.5rem 0;
+}
+
+.entry a:hover {
+    color: var(--color-gray-800);
+}
+
+/* Text Box Styling */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box article {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+/* Image Box Styling */
+.caption {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+/* Single Image */
+.entry-image-h {
+    height: 20rem;
+    border-radius: 8px;
+}
+
+.entry-image-v {
+    height: 30rem;
+    border-radius: 8px;
+}
+
+/* Gallery */
+.entry-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 14.75rem;
+    gap: .5rem;
+    width: 30rem;
+    list-style: none;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.entry-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

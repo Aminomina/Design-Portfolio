@@ -1,0 +1,162 @@
+<!-- LANDING PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/grid.css" />
+    <link rel="stylesheet" href="/slideshow/slideshow.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="/slideshow/slideshow.js"></script>
+    <title>Anna Lugthart's Portfolio</title>
+    <!-- Code to link header and footer files -->
+    <!-- From Hariprasad Prolanx (https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header (same for every page) -->
+    <header></header>
+    <section class="hero" id="home">
+      <!-- Slideshow container -->
+      <!-- From W3 Schools -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" id="slide-1">
+          <img src="slideshow/slide1.png" />
+          <a href="" class="text"
+            >"pixelDoggo" Game Console (2020, coded in C)</a
+          >
+        </div>
+
+        <div class="mySlides fade" id="slide-2">
+          <img src="slideshow/slide2.jpg" />
+          <a href="" class="text">"The Library" (2021, Made with Blender)</a>
+        </div>
+
+        <div class="mySlides fade" id="slide-3">
+          <img src="slideshow/slide3.jpg" />
+          <a href="" class="text">Mortise and Tenon Chest (2021)</a>
+        </div>
+
+        <div class="mySlides fade" id="slide-4">
+          <img src="slideshow/slide4.jpg" />
+          <a href="" class="text">"Stingray" Spaceship (2021)</a>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div class="dot-box" style="text-align: center">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="card-array">
+        <!-- Engineering -->
+        <li class="card">
+          <a href="subjects/engineering/index.html" class="card-link-img">
+            <img
+              src="subjects/engineering/images/engineering.jpg"
+              alt="a welded seat frame"
+            />
+          </a>
+          <div class="card-text">
+            <div>
+              <h2>Engineering</h2>
+              <p>
+                Engineering design projects, some academic and some personal.
+              </p>
+            </div>
+            <a href="subjects/engineering/index.html" class="see-more"
+              >See more...</a
+            >
+          </div>
+        </li>
+        <!-- Art -->
+        <li class="card">
+          <a href="subjects/art/index.html" class="card-link-img">
+            <img
+              src="subjects/art/images/sailboat.png"
+              alt="a sailboat rolling on the waves under a cloudy sky"
+            />
+          </a>
+          <div class="card-text">
+            <div>
+              <h2>Art</h2>
+              <p>
+                A collection of art projects I've worked on over the years, both
+                digital and physical media.
+              </p>
+            </div>
+            <a href="subjects/art/index.html" class="see-more">See more...</a>
+          </div>
+        </li>
+        <!-- Writing -->
+        <li class="card">
+          <a href="subjects/writing/index.html" class="card-link-img">
+            <img
+              src="subjects/writing/images/writing.png"
+              alt="a zoomed in view of an essay about LGBTQ representation in cinema"
+            />
+          </a>
+          <div class="card-text">
+            <div>
+              <h2>Writing</h2>
+              <p>
+                Writing excerpts, including technical, persuasive, and creative
+                passages.
+              </p>
+            </div>
+            <a href="subjects/writing/index.html" class="see-more"
+              >See more...</a
+            >
+          </div>
+        </li>
+        <!-- Other Projects -->
+        <li class="card">
+          <a href="subjects/personal/index.html" class="card-link-img">
+            <img
+              src="subjects/personal/images/personal.jpg"
+              alt="a brown wooden chest covered in branch-like designs"
+            />
+          </a>
+          <div class="card-text">
+            <div>
+              <h2>Other Projects</h2>
+              <p>
+                From woodworking to home organization, these projects showcase
+                creative solutions to a range of design challenges.
+              </p>
+            </div>
+            <a href="subjects/personal/index.html" class="see-more"
+              >See more...</a
+            >
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- Footer (same for every page) -->
+    <footer></footer>
+  </body>
+</html>

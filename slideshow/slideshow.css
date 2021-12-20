@@ -1,0 +1,147 @@
+/* SLIDESHOW STYLE */
+/* From W3 Schools */
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Slideshow container */
+.hero {
+  height: calc(100vh - 10rem);
+  /* background-color: var(--color-gray-800B); */
+}
+
+.slideshow-container {
+  width: 100%;
+  height: calc(100vh - 12.5rem);
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 100%;
+  background-size: cover;
+}
+
+/* Show first slide by default */
+#slide-1 {
+  display: flex;
+}
+
+#slide-1 a,
+#slide-4 a {
+  color: var(--color-gray-100);
+}
+
+#slide-1 a:hover,
+#slide-4 a:hover {
+  color: var(--color-gray-200);
+}
+
+#slide-2 a,
+#slide-3 a {
+  color: var(--color-gray-800B);
+}
+
+#slide-2 a:hover,
+#slide-3 a:hover {
+  color: var(--color-gray-600);
+}
+
+.mySlides img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--color-gray-100);
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(73, 65, 65, 0.8);
+}
+
+/* Caption text */
+.text {
+  text-align: right;
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 8px;
+  right: 1rem;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot-box {
+  height: 2.5rem;
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-800B),
+    var(--color-gray-800)
+  );
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 8px var(--color-gray-800);
+}
+
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: auto 0.5rem;
+  background-color: var(--color-gray-200);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--color-gray-600);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

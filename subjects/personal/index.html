@@ -1,0 +1,42 @@
+<!-- PERSONAL PROJECTS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/grid.css" />
+    <link rel="stylesheet" href="styles/personal.css">
+    <title>Other Projects</title>
+    <!-- Code to link header and footer files -->
+    <script  
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header></header>
+    <section class="hero" id="personal">
+      <div class="hero-image">
+        <h2 class="hero-content">Other Projects</h2>
+        <a class="hero-caption" href="">Oak Shelving Unit</a>
+      </div>
+      <div class="hero-bar">
+      </div>
+    </section>
+    <div id="background"></div> <!-- Website Background (not in main flow) -->
+    <main>
+      <ul class="card-array">
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
