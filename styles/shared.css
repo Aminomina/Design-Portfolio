@@ -1,7 +1,7 @@
 /* SHARED STYLING */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@600;700&family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@600;700&family=Merriweather&display=swap");
 /* Default Site Styling */
 html {
   --color-gray-100: rgb(236, 232, 232);
@@ -45,7 +45,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 10rem;
+  /* height: 10rem; */
   background: linear-gradient(
     0deg,
     var(--color-gray-800B),
@@ -82,12 +82,13 @@ nav ul {
   list-style: none;
   justify-content: space-around;
   padding: 0.7rem 0;
-  width: 55rem;
+  width: 60%;
   margin: auto;
 }
 
 nav a {
-  font-family: "Cormorant", serif;  font-size: 1.4rem;
+  font-family: "Cormorant", serif;
+  font-size: 1.4rem;
   color: var(--color-gray-200);
 }
 
@@ -194,4 +195,21 @@ footer a {
 
 footer a:hover {
   color: var(--color-gray-100);
+}
+
+/* Responsive View */
+@media (max-width: 59rem) {
+  h1 a {
+    letter-spacing: 1rem;
+  }
+
+  nav ul {
+    width: 90%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    display: none;
+  }
 }

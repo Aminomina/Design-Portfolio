@@ -27,21 +27,21 @@
 }
 
 #slide-1 a,
+#slide-2 a,
 #slide-4 a {
   color: var(--color-gray-100);
 }
 
 #slide-1 a:hover,
+#slide-2 a:hover,
 #slide-4 a:hover {
   color: var(--color-gray-200);
 }
 
-#slide-2 a,
 #slide-3 a {
   color: var(--color-gray-800B);
 }
 
-#slide-2 a:hover,
 #slide-3 a:hover {
   color: var(--color-gray-600);
 }

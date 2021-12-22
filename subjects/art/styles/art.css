@@ -8,9 +8,9 @@
 }
 
 #art .hero-caption {
-  color: var(--color-gray-800B);
+  color: var(--color-gray-100);
 }
 
 #art .hero-caption:hover {
-  color: var(--color-gray-600);
+  color: var(--color-gray-200);
 }
