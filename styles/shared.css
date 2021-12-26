@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+main {
+  min-height: calc(100vh - 16rem);
+}
+
 h2 {
   font-family: "Cormorant", serif;
   color: var(--color-gray-800);
@@ -43,9 +47,9 @@ a {
 /* Header Styles */
 header {
   display: flex;
+  height: 10rem;
   flex-direction: column;
   justify-content: space-around;
-  /* height: 10rem; */
   background: linear-gradient(
     0deg,
     var(--color-gray-800B),
@@ -176,6 +180,7 @@ footer {
     var(--color-gray-800)
   );
   padding: 1rem;
+  margin-top: auto;
   box-shadow: 2px 4px 8px var(--color-gray-800);
 }
 
@@ -183,6 +188,7 @@ footer ul {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding: 0;
 }
 
 footer li {
@@ -209,6 +215,28 @@ footer a:hover {
 }
 
 @media (max-width: 48rem) {
+
+  header {
+    height: 100%;
+  }
+
+  h1 {
+    padding: 0.6rem 1.1rem;
+  }
+
+  h1 a {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+
+  nav ul {
+    padding: 0.2rem 0;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
   .hero {
     display: none;
   }

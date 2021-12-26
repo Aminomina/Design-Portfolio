@@ -2,6 +2,7 @@
 .entry-list {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .entry {
@@ -18,7 +19,12 @@
     justify-content: space-between;
     width: 55rem;
     margin: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 0.5rem;
+}
+
+/* Flip text and image when side by side */
+.row-reverse {
+    flex-direction: row-reverse;
 }
 
 .text-entry {
@@ -63,15 +69,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 1.5rem;
+    margin: 0 auto;
 }
 
 .text-box article {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    /* width: 20rem; */
 }
 
 /* Image Box Styling */
+.image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
 .caption {
     margin: 1rem 0 0 0;
     text-align: center;
@@ -81,11 +97,13 @@
 .entry-image-h {
     height: 20rem;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 .entry-image-v {
     height: 30rem;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 /* Gallery */
@@ -99,10 +117,85 @@
     padding: 0;
     border-radius: 8px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .entry-gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 60rem) {
+    .sub-entry {
+        flex-direction: column;
+    }
+
+    .text-box {
+        width: 70%;
+    }
+
+    .text-box article h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: calc(55rem/0.8)) {
+    .sub-entry {
+        width: 80vw;
+    }
+}
+
+@media (max-width: calc(45rem/0.7)) {
+    .text-entry {
+        width: 70vw;
+        padding: calc(2vw*70/45) calc(3vw*70/45);
+    }
+}
+
+@media (max-width: 48rem) {
+    .entry {
+        margin: 1rem auto;
+    }
+    
+    .sub-entry {
+        width: 85vw;
+        padding: 1rem 0.5rem;
+    }
+    
+    .text-entry {
+        width: 80vw;
+    }
+
+    .entry-image-h {
+        height: revert;
+        width: 75%;
+    }
+
+    .entry-image-v {
+        height: revert;
+        width: 70%;
+    }
+
+    .entry-gallery {
+        height: 70vw;
+        width: 70vw;
+        grid-auto-rows: calc(35vw - 0.25rem);
+        /* grid-auto-rows: 14.75rem; */
+    }
+}
+
+@media (max-width: 35rem) {
+    
+    .text-box {
+        width: 90%;
+    }
+    
+    .entry-image-h {
+        width: 100%;
+    }
+
+    .entry-image-v {
+        width: 100%;
+    }
 }
