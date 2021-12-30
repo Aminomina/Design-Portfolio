@@ -1,0 +1,172 @@
+<!-- FANUC LR MATE 200ID -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FANUC LR Mate 200iD</title>
+    <!-- Code to link header and footer files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="entry-list">
+        <li class="entry">
+          <h2 class="entry-title">
+            FANUC LR Mate 200iD<br />(Winter 2019-Spring 2019)
+          </h2>
+          <!-- Overview -->
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <p>
+                  With another student, I developed curriculum to teach
+                  Mechanical Engineering students how to program and operate a
+                  FANUC industrial robot. The instruction included online
+                  presentations to introduce the information (made by me)
+                  followed by lab sessions where students could use the robot
+                  (conducted by my colleague). We used the Certified Education
+                  Robot Training (CERT) cart, seen on the right. The curriculum
+                  included safety, operating/programming with the teach pendant,
+                  and vision functionality.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/fanuc-02.jpg"
+                alt="a FANUC LR Mate 200iD robot arm on the CERT cart"
+                class="entry-image-v"
+              />
+              <p class="caption">The CERT cart</p>
+            </div>
+          </div>
+        </li>
+        <!-- Basic Programming -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>Basic Programming</h2>
+                <p>
+                  The first module (after Safety) was Basic Programming. In this
+                  lab, students learned how to create programs, record points,
+                  test programs, and edit motion between points (speed, path
+                  shape, etc.). The end goal was to make a program that traces a
+                  rectangle on the floor of the CERT cart.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <video
+                src="../images/fanuc-03.mp4"
+                alt="a robot arm tracing a square on a whiteboard"
+                controls="controls"
+                class="entry-image-h"
+              ></video>
+              <p class="caption">Rectangle Demo</p>
+            </div>
+          </div>
+        </li>
+        <!-- Advanced Programming -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>Advanced Programming</h2>
+                <p>
+                  The next module was Advanced Programming. In this lab,
+                  students learned how to use position registers (globally
+                  defined positions the robot can assume in any program),
+                  activate the end effector, and define User (custom) Frames of
+                  reference. This time, the end goal was to trace the more
+                  complicated shape of our school logo.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <video
+                src="../images/fanuc-04.mp4"
+                alt="a robot arm tracing the Northwestern University logo on a whiteboard"
+                controls="controls"
+                class="entry-image-h"
+              ></video>
+              <p class="caption">Northwestern "N"</p>
+            </div>
+          </div>
+        </li>
+        <!-- Vision -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>Vision</h2>
+                <p>
+                  The final module was Vision. In this lab, students learned
+                  about the vision capabilities of the robot. Due to timing
+                  issues, students were not able to program the robot to use
+                  vision, but were able to watch the vision demo program I
+                  wrote. In it, the robot uses an overhead camera to determine
+                  the location of a lego brick on a "platform." It then assumes
+                  the correct position/rotation, picks up the brick, and drops
+                  it into a "receptacle."
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <video
+                src="../images/fanuc-05.mp4"
+                alt="a robot arm locating and retrieving a lego brick"
+                controls="controls"
+                class="entry-image-v"
+              ></video>
+              <p class="caption">Vision Demo</p>
+            </div>
+          </div>
+        </li>
+        <!-- Motion Test -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>Motion Test</h2>
+                <p>
+                  While learning to use the robot, I put together this motion
+                  test for Valentine's Day, which includes all three motion
+                  types (joint, linear, and circular).
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <video
+                src="../images/fanuc-06.mp4"
+                alt="a robot arm signing I heart U"
+                controls="controls"
+                class="entry-image-v"
+              ></video>
+              <p class="caption">Valentine's Day Program</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>

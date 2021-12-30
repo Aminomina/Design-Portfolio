@@ -14,11 +14,18 @@
     box-shadow: 2px 4px 8px var(--color-gray-800);
 }
 
+.entry-title {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+    margin: 0;
+    font-size: 2rem;
+}
+
 .sub-entry {
     display: flex;
     justify-content: space-between;
     width: 55rem;
-    margin: 0;
+    margin: 0 auto;
     padding: 2rem 0.5rem;
 }
 
@@ -26,7 +33,7 @@
 .row-reverse {
     flex-direction: row-reverse;
 }
-
+/* Text Entry Styling */
 .text-entry {
     display: flex;
     flex-direction: column;
@@ -48,6 +55,14 @@
 
 .text-entry p {
     margin: 0.5rem 0;
+}
+
+.image-entry {
+    width: 45rem;
+    padding: 2rem .5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Formatting for links placed within entries */
@@ -76,7 +91,8 @@
 .text-box article {
     display: flex;
     flex-direction: column;
-    /* width: 20rem; */
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 /* Image Box Styling */
@@ -89,6 +105,7 @@
 }
 
 .caption {
+    font-size: 0.9rem;
     margin: 1rem 0 0 0;
     text-align: center;
 }
@@ -126,6 +143,25 @@
     object-fit: cover;
 }
 
+/* Special Styling for Images in Image-Only Entries */
+.image-entry .entry-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.image-entry .entry-image-v {
+   height: revert;
+   width: 90%;
+   margin: 1rem auto;
+}
+
+.image-entry .entry-image-h {
+    height: revert;
+    width: 90%;
+    margin: 1rem auto;
+ }
+
+/* Adaptive Display */
 @media (max-width: 60rem) {
     .sub-entry {
         flex-direction: column;
@@ -137,6 +173,14 @@
 
     .text-box article h2 {
         text-align: center;
+    }
+
+    .image-entry {
+        width: 30rem;
+    }
+
+    .image-entry .entry-gallery {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -156,6 +200,10 @@
 @media (max-width: 48rem) {
     .entry {
         margin: 1rem auto;
+    }
+
+    .entry-title {
+        font-size: 1.5rem;
     }
     
     .sub-entry {
@@ -178,10 +226,16 @@
     }
 
     .entry-gallery {
-        height: 70vw;
         width: 70vw;
         grid-auto-rows: calc(35vw - 0.25rem);
-        /* grid-auto-rows: 14.75rem; */
+    }
+
+    .image-entry {
+        width: 70vw;
+    }
+
+    .image-entry .entry-gallery {
+        grid-auto-rows: calc(35vw - 0.25rem);
     }
 }
 
