@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/styles/shared.css" />
     <link rel="stylesheet" href="/styles/project-pages.css" />
+    <link rel="stylesheet" href="../styles/engineering.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mechatronics & Electronics</title>
     <!-- Code to link header and footer files -->
@@ -44,7 +45,7 @@
             </div>
             <div class="image-box">
               <img
-                src="../images/mech-elec-01.jpg"
+                src="../images/mech-elec/01.jpg"
                 alt="a two-wheeled robot with a blue cup sitting on top of it"
                 class="entry-image-v"
               />
@@ -57,7 +58,7 @@
           <div class="sub-entry row-reverse">
             <div class="text-box">
               <article>
-                <h2>The S'more Machine</h2>
+                <h2>The S'more Machine<br />(Spring 2016)</h2>
                 <p>
                   One of the first mechatronics projects I ever worked on (for a
                   High School Engineering class), this machine does exactly what
@@ -71,7 +72,7 @@
             </div>
             <div class="image-box">
               <video
-                src="../images/fanuc-06.mp4"
+                src="../images/mech-elec/03.mov"
                 alt="an assembly line machine constructing a smore from components"
                 controls="controls"
                 class="entry-image-v"
@@ -80,117 +81,204 @@
             </div>
           </div>
         </li>
-        <!-- V2C -->
-        <li class="entry">
-          <div class="sub-entry row-reverse">
-            <div class="text-box">
-              <article>
-                <h2>V2C</h2>
-                <p>
-                  While users found our first prototype intriguing, they found
-                  it too difficult to use and did not think its multiple
-                  configurations were necessary. This feedback drove us to seek
-                  out simpler designs that still incorporated novel features.
-                </p>
-                <p>
-                  This prototype was designed to spin, giving users 360º of
-                  motion, and to separate from its base to be used as a kneeler.
-                </p>
-              </article>
-            </div>
-            <div class="image-box">
-              <ul class="entry-gallery">
-                <li>
-                  <img
-                    src="../images/utility-stool-05.png"
-                    alt="a swivel seat on a tripod"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="../images/utility-stool-06.png"
-                    alt="the swivel seat used as a kneeler"
-                  />
-                </li>
-              </ul>
-              <p class="caption">
-                Prototype V2C used as a seat (Left) and as a kneeler (Right)
-              </p>
-            </div>
-          </div>
-        </li>
-        <!-- V3A -->
+        <!-- LIGHT ACTIVATED MONKEY -->
         <li class="entry">
           <div class="sub-entry">
             <div class="text-box">
               <article>
-                <h2>V3A</h2>
+                <h2>
+                  Light-Activated Monkey<br />
+                  (Fall 2016)
+                </h2>
                 <p>
-                  In the third round, we tried to iron out some of the issues
-                  users had with prototype V2C using some new ideas. In
-                  prototype V3A, the handles fold down, and the legs also
-                  collapse, allowing for flat storage, shipping, and allowing it
-                  function as a kneeler without requiring disassembly. Also, a
-                  small handle was added to lock the spinning mechanism when not
-                  in use.
+                  I designed and built this project as a lighthearted jump-scare
+                  for a Halloween maze at my church. Unfortunately, the original
+                  video (where it is attached to the maze) is lost, but this
+                  recreation demonstrates the monkey spinning after the light
+                  sensor is tripped.
                 </p>
                 <p>
-                  For this prototype, I worked on the leg components and their
-                  connection to the base. Unfortunately this design was not
-                  liked by users because it was difficult to set up and its many
-                  moving parts made it unstable.
+                  The project runs on a Teensy 3.2 Arduino and the light
+                  threshold can be adjusted for different light levels with a
+                  potentiometer.
                 </p>
               </article>
             </div>
             <div class="image-box">
-              <ul class="entry-gallery">
+              <ul class="entry-gallery" id="light-monkey">
+                <li>
+                  <video
+                    src="../images/mech-elec/04.mp4"
+                    alt="a motor swinging a stuffed monkey by the tail when activated by a sensor"
+                    controls="controls"
+                  ></video>
+                </li>
                 <li>
                   <img
-                    src="../images/utility-stool-07.png"
-                    alt="a swivel seat on folding legs"
+                    src="../images/mech-elec/05.jpg"
+                    alt="a circuit board powered by a 9 volt battery"
                   />
                 </li>
                 <li>
                   <img
-                    src="../images/utility-stool-09.jpg"
-                    alt="the frame of the seat with legs folded flat"
+                    src="../images/mech-elec/06.jpg"
+                    alt="a light sensor circuit board"
                   />
                 </li>
               </ul>
               <p class="caption">
-                Prototype V3A (Left) and the flat-folded frame (Right)
+                Demonstration (Left), main board (UR), and light sensor (BR)
               </p>
             </div>
           </div>
         </li>
-        <!-- V4 -->
+        <!-- HUNTER/PREY ROBOTICS COMPETITION -->
         <li class="entry">
           <div class="sub-entry row-reverse">
             <div class="text-box">
               <article>
-                <h2>V4</h2>
+                <h2>
+                  Hunter/Prey Robotics Competition<br />
+                  (Spring 2017)
+                </h2>
                 <p>
-                  Our final prototype implemented everything we’d learned from
-                  the test prototypes. We switched back to a detachable top
-                  design, which this time locked onto the base to allow both to
-                  be carried at once. The legs use an x-frame design which
-                  allows them to easily fold flat for storage, and handles
-                  (though they were never constructed) would have folded flat as
-                  well. Rubber anti-sink feet would have also been added.
-                </p>
-                <p>
-                  For this prototype I designed the leg mechanism and did the
-                  welding.
+                  The basis of this project was to design an autonomous "prey"
+                  robot that could flee a piloted "hunter robot" using various
+                  sensors, including bump, light, ultrasonic, and VIVE, all
+                  running on a Teensy Arduino microcontroller. My largest
+                  contributions were designing and building the wheel mounts as
+                  well as writing code to control the motors.
                 </p>
               </article>
             </div>
             <div class="image-box">
               <img
-                src="../images/utility-stool-08.png"
-                alt="a swivel seat on x-frame legs"
+                src="../images/mech-elec/02.jpg"
+                alt="a two-wheeled robot with a blue cup sitting on top of it"
+                class="entry-image-v"
+              />
+              <p class="caption">"Prey" Robot</p>
+            </div>
+          </div>
+        </li>
+        <!-- MOTOR CONTROL PROJECT -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>Motor Control Project (Winter 2019)<br />(Spring 2016)</h2>
+                <p>
+                  The goal of this project was to create a fully controllable
+                  motor that could be tasked with many different operations,
+                  including holding its position at an angle or following a
+                  trajectory.
+                </p>
+                <p>
+                  The project ran on a PIC32MX795F12H microcontroller and was
+                  controlled via a client in MATLAB.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <video
+                src="../images/mech-elec/07.mp4"
+                alt="a motor is directed to move from a computer screen and follows a predetermined path"
+                controls="controls"
+                class="entry-image-v"
+              ></video>
+              <p class="caption">Motor Control Test</p>
+            </div>
+          </div>
+        </li>
+        <!-- ELECTRIC BICYCLE -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>
+                  Electric Bicycle<br />
+                  (Winter 2020)
+                </h2>
+                <p>
+                  Although not strictly a mechatronics project, this (perhaps
+                  ill-advised) personal project has involved its fair share of
+                  wiring and has also taught me lessons about working with
+                  higher power DC circuits.
+                </p>
+                <p>
+                  Starting from a replacement motor and control box for a dirt
+                  bike, I adapted the system to power my childhood bicycle.
+                </p>
+                <p>
+                  Future steps include moving some of the batteries over the
+                  rear wheel to increase traction, adjusting the mount location
+                  of the motor to fix derailing issues, and adding accessories
+                  like a speedometer and battery meter (perhaps powered by
+                  Arduino). Some guarding around the chain and motor might also
+                  be a good idea.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/mech-elec/10.jpg"
+                alt="a small bicycle powered by batteries and a motor"
                 class="entry-image-h"
               />
-              <p class="caption">Prototype V4</p>
+              <p class="caption">The Electric Bike</p>
+            </div>
+          </div>
+        </li>
+        <!-- SMART "WATCH" -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>
+                  Smart "Watch"<br />
+                  (Spring 2020)
+                </h2>
+                <p>
+                  The goal of this project was to create a fully functional (but
+                  not so wearable) smartwatch powered by a PIC32MX170F256B.
+                  Functions include a clock, thermometer, altimeter/gyroscope,
+                  input buttons, and LEDs/NeoPixels.
+                </p>
+                <p>
+                  I added a simple obstacle game inspired by the Google T-Rex
+                  Run game that includes button-activated jumping, collision
+                  detection, and randomly spaced obstacles.
+                </p>
+                <p>
+                  Future upgrades to the "watch" could include voice
+                  recording/playback, a removable SD card, and a settable alarm.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery" id="smart-watch">
+                <li>
+                  <video
+                    src="../images/mech-elec/09.mp4"
+                    alt="a screen displays the orientation data of a circuit board, first numerically, then graphically"
+                    controls="controls"
+                  ></video>
+                </li>
+                <li>
+                  <img src="../images/mech-elec/11.jpg" alt="a circuit board" />
+                </li>
+                <li>
+                  <video
+                    src="../images/mech-elec/12.mp4"
+                    alt="a screen on a circuit board displays a video game where a dog woofs and jumps over bushes"
+                    controls="controls"
+                  ></video>
+                </li>
+              </ul>
+              <p class="caption">
+                Inclinometer demonstration (TL), the board (TR), and obstacle
+                game demonstration (Bottom)
+              </p>
             </div>
           </div>
         </li>

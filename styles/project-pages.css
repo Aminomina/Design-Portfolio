@@ -137,7 +137,8 @@
     margin: 0 auto;
 }
 
-.entry-gallery img {
+.entry-gallery img,
+.entry-gallery video {
     width: 100%;
     height: 100%;
     object-fit: cover;

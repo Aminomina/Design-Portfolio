@@ -1,0 +1,214 @@
+<!-- CAD PROJECTS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <link rel="stylesheet" href="../styles/engineering.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAD Projects</title>
+    <!-- Code to link header and footer files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="entry-list">
+        <li class="entry">
+          <h2 class="entry-title">CAD Projects</h2>
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <p>Various CAD projects I've worked on over the years</p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/cad/01.png"
+                alt="a CAD unicyle wheel"
+                class="entry-image-h"
+              />
+              <p class="caption">A unicycle wheel</p>
+            </div>
+          </div>
+        </li>
+        <!-- Ball Launcher -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>Ball Launcher<br />(Winter 2021)</h2>
+                <p>
+                  I created the Ball Launcher as part of a design project for a
+                  job application. Features include 2 brushless DC motors, an
+                  extendable chute, and detachable tripod. In hindsight, I'm not
+                  so confident in that wing nut, but otherwise I think it would
+                  make a solid piece of equipment with a fun, retro feel.
+                </p>
+                <a
+                  class="entry-link"
+                  href="../assets/ball-launcher-calculations.pdf"
+                  target="_blank"
+                  >See calculations here!</a
+                >
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/cad/02.png"
+                alt="a CAD model of a ball launcher on a tripod"
+                class="entry-image-v"
+              />
+              <p class="caption">The launcher</p>
+            </div>
+          </div>
+        </li>
+        <!-- CAD Unicycle -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>
+                  CAD Unicycle<br />
+                  (Spring 2018)
+                </h2>
+                <p>
+                  I modeled the CAD Unicycle for a class in NX. The purpose was
+                  to practice using features of the software taught in class,
+                  including extrusions, datum planes, rotationally symmetric
+                  features, and booleans.
+                </p>
+                <p>
+                  I researched current manufacturing processes used to fabricate
+                  bicycles and unicycles in order to design a realistic and
+                  appealing CAD model.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery" id="tripod-mount">
+                <li>
+                  <img
+                    src="../images/cad/03.png"
+                    alt="a camcorder on a tripod"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/cad/04.png"
+                    alt="the replacement tripod mount"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/cad/05.png"
+                    alt="the replacement tripod mount attached to a camcorder"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                The unicylce (Left), pedal (TR), and wheel (BR)
+              </p>
+            </div>
+          </div>
+        </li>
+        <!-- Gear Reduction System -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>Gear Reduction System<br />(Spring 2019)</h2>
+                <p>
+                  I worked on the Gear Reduction System in a team for a
+                  Mechanical Elements class. The goal was to create a 3-axle
+                  system which would convert a given speed/torque to an output
+                  speed/torque. We performed calculations for axles, gears, and
+                  bearings to ensure that all would perform a duty cycle beyond
+                  a set amount of time without being unnecessarily
+                  over-designed.
+                </p>
+                <p>
+                  We used a mix of hand calculations and MATLAB code I wrote to
+                  determine the necessary specifications.
+                </p>
+                <a class="entry-link" href="gear-reduction-drawings.html"
+                  >See engineering drawings...</a
+                >
+                <a
+                  class="entry-link"
+                  href="../assets/me-315.pdf"
+                  target="_blank"
+                  >See MATLAB code...</a
+                >
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/cad/06.png"
+                alt="a CAD model of a gearshaft"
+                class="entry-img-h"
+              />
+              <p class="caption">The gearshaft assembly</p>
+            </div>
+          </div>
+        </li>
+        <!-- Starbucks Emblem -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>Starbucks Emblem<br />(Winter 2015)</h2>
+                <p>
+                  I made this emblem in High School for a class assignment. It's
+                  near and dear to me because it's one of the very first things
+                  I ever made in CAD!
+                </p>
+                <p>
+                  At the end of the assignment, the teacher printed our designs
+                  in color on a powder bed 3D printer and we got to bring them
+                  home.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery">
+                <li>
+                  <img
+                    src="../images/cad/09.jpg"
+                    alt="a CAD model of the Starbucks logo"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/cad/10.jpg"
+                    alt="the CAD model, 3D printed"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                The CAD model in progress (Left) and the completed 3D print
+                (Right)
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
