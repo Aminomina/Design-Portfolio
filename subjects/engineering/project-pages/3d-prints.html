@@ -1,0 +1,205 @@
+<!-- 3D PRINTS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <link rel="stylesheet" href="../styles/engineering.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Prints</title>
+    <!-- Code to link header and footer files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="entry-list">
+        <li class="entry">
+          <h2 class="entry-title">3D Prints</h2>
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <p>
+                  An assortment of 3D prints I've made (from scratch!) and how I
+                  made them.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/3d-prints/02.jpg"
+                alt="a 3D printed superhero figure, whale, and octopus"
+                class="entry-image-v"
+              />
+              <p class="caption">Three 3D prints</p>
+            </div>
+          </div>
+        </li>
+        <!-- SCULPTING & 3D MODELING -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>Sculpting & 3D Modeling</h2>
+                <p>
+                  While constraint based CAD programs like SolidWorks and NX
+                  excel at designing traditionally manufacturable parts, I
+                  prefer using Blender, a mesh based program, for more artistic
+                  models.
+                </p>
+                <p>
+                  One advantage this offers is the ability to freely deform
+                  models through sculpting, use of wire cages, and "point
+                  pulling," demonstrated at left.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery" id="sculpting-modeling">
+                <li>
+                  <img
+                    src="../images/3d-prints/03.png"
+                    alt="a 3D model of a whale being sculpted"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/04.png"
+                    alt="a 3D model of a whale being sculpted"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/05.png"
+                    alt="a 3D model of a whale being deformed by its wire cage"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/06.png"
+                    alt="a 3D model of a whale being deformed by its wire cage"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/07.png"
+                    alt="a 3D model of a whale being being point pulled"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/08.png"
+                    alt="a 3D model of a whale being being point pulled"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                Top to Bottom: Deforming the model by sculpting, deforming the
+                model with its wire cage, deforming the model by "point pulling"
+              </p>
+            </div>
+          </div>
+        </li>
+        <!-- RIGGING & POSING -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <h2>Rigging & Posing</h2>
+                <p>
+                  I find it easiest to construct models in simple, symmetrical
+                  poses, so I can better see what I'm doing (and so I can mirror
+                  the model and do half the work).
+                </p>
+                <p>
+                  After creating an initial model, I rig it with a posable
+                  armature and get it looking the way I want.
+                </p>
+                <p>
+                  Following this, I touch it up one last time, merge all
+                  intersecting parts to create a solid mesh, and export to a
+                  .obj file.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery" id="machinists-hammer">
+                <li>
+                  <img
+                    src="../images/3d-prints/09.png"
+                    alt="a symmetrical 3D model of an octopus"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/10.png"
+                    alt="a posed 3D model of an octopus"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                A rigged, unposed model (Top), the model, posed (Bottom)
+              </p>
+            </div>
+          </div>
+        </li>
+        <!-- SLICING & PRINTING -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="text-box">
+              <article>
+                <h2>Slicing & Printing</h2>
+                <p>
+                  To generate G-code the printer can understand, I slice my
+                  models in Cura. After setting the configurations, I let Cura
+                  process the model, make adjustments as necessary, and send it
+                  to the printer to print.
+                </p>
+                <p>
+                  After breaking off support material and extra filament, the
+                  print is done!
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery" id="sculpting-modeling">
+                <li>
+                  <img
+                    src="../images/3d-prints/11.png"
+                    alt="a 3D model of a superhero being sliced"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/3d-prints/12.jpg"
+                    alt="a 3D model of a superhero being 3D printed"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                A model imported into Cura (Left) and the model, mid-print
+                (Right)
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
