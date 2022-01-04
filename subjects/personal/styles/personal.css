@@ -48,7 +48,9 @@
   grid-template-columns: 0.8fr 1.2fr;
 }
 
-#mt-chest-5 {
+#mt-chest-5,
+#miniature-crossbow,
+#budget-zamboni {
   grid-auto-rows: revert;
   grid-template-columns: 1.1fr 0.9fr;
 }
@@ -64,6 +66,7 @@
 }
 
 #calipers-boxes li:nth-of-type(1),
-#tea-box li:nth-of-type(1) {
+#tea-box li:nth-of-type(1),
+#budget-zamboni li:nth-of-type(1) {
   grid-row: 1 / span 2;
 }

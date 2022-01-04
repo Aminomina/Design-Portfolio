@@ -1,0 +1,114 @@
+<!-- Paintings -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <link rel="stylesheet" href="../styles/art.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paintings</title>
+    <!-- Code to link header and footer files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="entry-list">
+        <!-- Persephone -->
+        <li class="entry">
+          <h2 class="entry-title">Paintings</h2>
+          <div class="sub-entry">
+            <div class="image-box">
+              <img
+                src="../images/paintings/01.jpg"
+                alt="an acrylic painting of an armored octopus"
+                class="entry-image-h"
+              />
+            </div>
+            <div class="text-box">
+              <article>
+                <h2>Persephone (Acrylic, Spring 2019)</h2>
+              </article>
+            </div>
+          </div>
+        </li>
+        <!-- The Monastery -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="image-box">
+              <img
+                src="../images/paintings/02.jpg"
+                alt="an acrylic painting of a monk in blue robes and a monastery"
+                class="entry-image-h"
+              />
+            </div>
+            <div class="text-box">
+              <article>
+                <h2>The Monastery (Acrylic, Fall 2019)</h2>
+              </article>
+            </div>
+          </div>
+        </li>
+        <!-- Robert McClory Bike Trail -->
+        <li class="entry">
+          <div class="sub-entry">
+            <div class="image-box">
+              <img
+                src="../images/paintings/03.jpg"
+                alt="a watercolor painting of a bike trail in early fall"
+                class="entry-image-h"
+              />
+            </div>
+            <div class="text-box">
+              <article>
+                <h2>Robert McClory Bike Trail (Watercolor, Fall 2018)</h2>
+                <!-- <p>
+                  In college, I only lived about thirty miles from my hometown,
+                  and when the weather was nice, I'd sometimes ride my bike home
+                  to visit my family for the weekend.
+                </p>
+                <p>
+                  On one such trip, I stopped to snap a picture of the trail,
+                  and later painted it in watercolor.
+                </p> -->
+              </article>
+            </div>
+          </div>
+        </li>
+        <!-- Harbor at Sunset -->
+        <li class="entry">
+          <div class="sub-entry row-reverse">
+            <div class="image-box">
+              <img
+                src="../images/paintings/04.jpg"
+                alt="a watercolor painting of a harbor at sunset with mountains in the distance"
+                class="entry-image-h"
+              />
+            </div>
+            <div class="text-box">
+              <article>
+                <h2>Harbor at Sunset (Watercolor, Spring 2014)</h2>
+              </article>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
