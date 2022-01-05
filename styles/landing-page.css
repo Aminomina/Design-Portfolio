@@ -1,0 +1,7 @@
+.card-array {
+  grid-template-columns: 1fr 1fr;
+}
+
+.card img {
+  height: 24rem;
+}
