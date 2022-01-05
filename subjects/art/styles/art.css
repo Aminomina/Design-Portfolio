@@ -29,3 +29,13 @@
   grid-auto-rows: revert;
   grid-template-columns: 1.1fr 0.9fr;
 }
+
+#dd-character {
+  grid-auto-rows: revert;
+  grid-template-columns: 1fr;
+}
+
+#pixel-characters {
+  grid-auto-rows: revert;
+  grid-template-columns: 1fr 1fr 1fr;
+}
