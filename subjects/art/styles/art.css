@@ -16,8 +16,8 @@
 }
 
 /* Custom Styles */
-#everyday-objects,
-#face-study {
+#everyday-objects .entry-gallery,
+#face-study .entry-gallery {
   grid-auto-rows: revert;
 }
 
@@ -25,17 +25,18 @@
   grid-column: 1 / span 2;
 }
 
-#gear-drawings {
+#gear-drawings .entry-gallery {
   grid-auto-rows: revert;
   grid-template-columns: 1.1fr 0.9fr;
 }
 
-#dd-character {
+#dd-character .entry-gallery,
+#kitchen-items .entry-gallery {
   grid-auto-rows: revert;
   grid-template-columns: 1fr;
 }
 
-#pixel-characters {
+#pixel-characters .entry-gallery {
   grid-auto-rows: revert;
   grid-template-columns: 1fr 1fr 1fr;
 }

@@ -16,19 +16,24 @@
 }
 
 /* Custom Styles */
-#light-monkey,
-#tripod-mount {
+#light-monkey .entry-gallery,
+#tripod-mount .entry-gallery,
+#cad-unicycle .entry-gallery,
+#miter-set .entry-gallery {
   grid-template-columns: 1.05fr 0.95fr;
   grid-auto-rows: revert;
 }
 
 #light-monkey li:nth-of-type(1),
-#tripod-mount li:nth-of-type(1) {
+#tripod-mount li:nth-of-type(1),
+#cad-unicycle li:nth-of-type(1),
+#miter-set li:nth-of-type(1) {
   grid-row: 1 / span 2;
 }
 
-#smart-watch,
-#sculpting-modeling {
+#smart-watch .entry-gallery,
+#sculpting-modeling .entry-gallery,
+#slicing-printing .entry-gallery {
   grid-auto-rows: revert;
 }
 
@@ -36,8 +41,9 @@
   grid-column: 1 / span 2;
 }
 
-#machinists-hammer,
-#multi-tool-handle {
+#machinists-hammer .entry-gallery,
+#multi-tool-handle .entry-gallery,
+#rigging-posing .entry-gallery {
   grid-template-columns: 1fr;
   grid-auto-rows: revert;
 }
