@@ -19,11 +19,14 @@
 #bicycle-trailer-2 .entry-gallery,
 #bed-futon .entry-gallery,
 #apartment-shelves .entry-gallery,
-#hobby-lathe-7 .entry-gallery {
+#hobby-lathe-7 .entry-gallery,
+#stargate .entry-gallery,
+#fred-1 .entry-gallery {
   grid-auto-rows: revert;
 }
 
-#bicycle-trailer-2 li:nth-of-type(3) {
+#bicycle-trailer-2 li:nth-of-type(3),
+#stargate li:nth-of-type(5) {
   grid-column: 1 / span 2;
 }
 
@@ -38,12 +41,15 @@
 #mt-chest-3 .entry-gallery,
 #mt-chest-4 .entry-gallery,
 #mt-chest-6 .entry-gallery,
-#mt-chest-7 .entry-gallery {
+#mt-chest-7 .entry-gallery,
+#green-screen-frame .entry-gallery,
+#wall-tunnel-1 .entry-gallery {
   grid-template-columns: 1fr;
   grid-auto-rows: revert;
 }
 
-#mt-chest-1 .entry-gallery {
+#mt-chest-1 .entry-gallery,
+#wall-tunnel-2 .entry-gallery {
   grid-auto-rows: revert;
   grid-template-columns: 0.8fr 1.2fr;
 }
@@ -67,6 +73,7 @@
 
 #calipers-boxes li:nth-of-type(1),
 #tea-box li:nth-of-type(1),
-#budget-zamboni li:nth-of-type(1) {
+#budget-zamboni li:nth-of-type(1),
+#wall-tunnel-2 li:nth-of-type(1) {
   grid-row: 1 / span 2;
 }
