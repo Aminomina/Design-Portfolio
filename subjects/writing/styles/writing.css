@@ -18,9 +18,19 @@
 }
 
 .hero-passage p {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  margin: 2rem 0 0 0;
 }
 
+.card-sample {
+  height: 12rem;
+  background-color: white;
+  padding: 2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
 
 /* Page Specific Settings */
 #writing .hero-content {
@@ -28,17 +38,24 @@
 }
 
 #creative-writing .hero-content {
-    width: 25rem;
+  width: 25rem;
 }
 
 #creative-writing .hero-passage {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #persuasive-writing .hero-content {
-    width: 28rem;
+  width: 28rem;
 }
 
 #technical-writing .hero-content {
-    width: 28rem;
+  width: 28rem;
+}
+
+@media (max-height: 35rem) {
+  .hero-passage p {
+    font-size: calc(6.25vh - 1.1875rem);
+    line-height: calc(12.5vh - 2.375rem);
+  }
 }

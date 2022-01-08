@@ -5,3 +5,39 @@
 .card img {
   height: 24rem;
 }
+
+@media (max-width: 63rem) {
+  .card-array {
+    width: 70%;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .card-array {
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 35rem) {
+  .card-array {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 24rem) {
+  .card img {
+    height: 18rem;
+  }
+}
+
+@media (max-height: 30rem) {
+  .card-array {
+    width: 60%;
+  }
+
+  .card img {
+    height: 12rem;
+  }
+}
