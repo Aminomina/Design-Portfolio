@@ -6,6 +6,13 @@
   height: 24rem;
 }
 
+.card-sample {
+  height: 18rem;
+  padding: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 @media (max-width: 63rem) {
   .card-array {
     width: 70%;

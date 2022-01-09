@@ -54,7 +54,8 @@
 }
 
 .text-entry p {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  line-height: 2rem;
 }
 
 .image-entry {

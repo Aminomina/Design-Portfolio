@@ -1,4 +1,9 @@
 /* Card Grid Styling */
+
+main {
+  margin-bottom: 5rem;
+}
+
 .card-array {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -16,6 +21,19 @@
   background-color: var(--color-gray-100);
   overflow: hidden;
   box-shadow: 2px 4px 8px var(--color-gray-800);
+}
+
+.card-sample {
+  height: 12rem;
+  background-color: white;
+  padding: 2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card img {
