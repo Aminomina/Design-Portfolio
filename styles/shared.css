@@ -2,6 +2,7 @@
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@600;700&family=Merriweather&display=swap");
+
 /* Default Site Styling */
 html {
   --color-gray-100: rgb(236, 232, 232);
@@ -44,6 +45,10 @@ a {
   color: var(--color-brown-800);
   font-weight: bold;
   cursor: pointer;
+}
+
+#shadow-root div {
+  height: 0;
 }
 
 /* Header Styles */
@@ -183,6 +188,7 @@ footer {
   );
   padding: 1rem;
   margin-top: auto;
+  margin-bottom: -20px;
   box-shadow: 2px 4px 8px var(--color-gray-800);
 }
 
