@@ -34,15 +34,19 @@
 }
 
 #creative-writing .hero-content {
-  width: 25rem;
-}
-
-#creative-writing .hero-passage {
-  font-size: 2rem;
+  width: 10rem;
 }
 
 #persuasive-writing .hero-content {
   width: 28rem;
+}
+
+#poetry-riddles .hero-content {
+  width: 30rem;
+}
+
+#poetry-riddles .hero-passage {
+  text-align: center;
 }
 
 #technical-writing .hero-content {
