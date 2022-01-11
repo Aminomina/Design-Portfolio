@@ -1,0 +1,185 @@
+<!-- GAME DOGGO -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <link rel="stylesheet" href="../styles/engineering.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gameDoggo</title>
+    <!-- Code to link header and footer files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="entry-list">
+        <li class="entry" id="overview">
+          <h2 class="entry-title">gameDoggo</h2>
+          <div class="sub-entry" id="overview">
+            <div class="text-box">
+              <article>
+                <p>
+                  During the
+                  <a href="mech-elec.html#smart-watch">Smart Watch Project,</a>
+                  which I made for a mechatronics class, I went beyond the scope
+                  of the project to design and code my own video game that could
+                  run on the board.
+                </p>
+                <p>
+                  The game is coded entirely in C, runs on a PIC32MX170F256B
+                  microcontroller, and outputs to a 32x128px OLED display.
+                </p>
+                <a
+                  class="entry-link"
+                  href="https://github.com/Aminomina/Doggo_Jump"
+                  target="_blank"
+                  >See code here!</a
+                >
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/game-doggo/01.png"
+                alt="a screen on a breadboard displaying a running dog"
+                class="entry-image-h"
+              />
+              <p class="caption">The game, wired on a breadboard</p>
+            </div>
+          </div>
+          <div class="sub-entry row-reverse" id="game-doggo-1">
+            <div class="text-box">
+              <article>
+                <p>
+                  The game originally ran on a breadboard and was powered by a
+                  USB. The circuit contained many components, including a DAC,
+                  gyroscope, and additional I/O that were useful for the smart
+                  watch, but not necessary for the game.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/game-doggo/02.jpg"
+                alt="a circuit wired on a breadboard"
+                class="entry-image-v"
+              />
+              <p class="caption">
+                The smart watch circuit, wired on a breadboard
+              </p>
+            </div>
+          </div>
+          <div class="sub-entry" id="game-doggo-2">
+            <div class="text-box">
+              <article>
+                <p>
+                  I learned Autodesk Eagle so I could design a custom printed
+                  circuit board (PCB) for the game.
+                </p>
+                <p>
+                  In order to save space, soldering time, and money, I kept only
+                  the microcontroller, OLED display, buttons, on/off switch, and
+                  other necessary components.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery">
+                <li>
+                  <img
+                    src="../images/game-doggo/03.jpg"
+                    alt="a computer diagram for the game PCB"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/game-doggo/04.jpg"
+                    alt="a PCB with some components set in place"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                Game PCB design (Top) and PCB with some components in place
+                (Bottom)
+              </p>
+            </div>
+          </div>
+          <div class="sub-entry row-reverse" id="game-doggo-3">
+            <div class="text-box">
+              <article>
+                <p>
+                  After soldering the components, I noticed an issue. I had
+                  originally planned on powering the board with a CR1220
+                  battery, but it didn't provide consistent (or long lasting)
+                  current.
+                </p>
+                <p>
+                  I purchased a 500mAh rechargable Lithium Polymer (LiPo)
+                  battery and surface soldered two wires onto the board for an
+                  attachment point.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery">
+                <li>
+                  <img
+                    src="../images/game-doggo/05.jpg"
+                    alt="a game PCB powered by a LiPo battery, off"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/game-doggo/06.jpg"
+                    alt="a game PCB powered by a LiPo battery, on"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                Game PCB powered by a LiPo battery, on (Top) and off (Bottom)
+              </p>
+            </div>
+          </div>
+          <div class="sub-entry" id="game-doggo-4">
+            <div class="text-box">
+              <article>
+                <p>
+                  The game runs great now, but still has room for future
+                  iterations. Improvements include using fewer through hole
+                  components, squeezing components closer together for a smaller
+                  footprint, and 3D printing a case to hold everything together
+                  and make it look more like a game console.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <video
+                src="../images/game-doggo/07.mp4"
+                alt="a game on a circuit board in which a dog jumps over bushes"
+                class="entry-image-h"
+                controls="controls"
+              ></video>
+              <p class="caption">Game demonstration</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
