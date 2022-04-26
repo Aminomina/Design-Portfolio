@@ -1,0 +1,106 @@
+<!-- 3D PRINTS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/project-pages.css" />
+    <link rel="stylesheet" href="../styles/personal.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Printed Puzzle Sphere</title>
+    <!-- Code to link header and footer files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("header").load("/header-footer/header.html");
+        $("footer").load("/header-footer/footer.html");
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- Website Background (not in main flow) -->
+    <div id="background"></div>
+    <main>
+      <ul class="entry-list">
+        <li class="entry" id="overview">
+          <h2 class="entry-title">
+            3D Printed Puzzle Sphere<br />(Spring 2022)
+          </h2>
+          <div class="sub-entry">
+            <div class="text-box">
+              <article>
+                <p>
+                  My girlfriend loves puzzles, so I made her this puzzle sphere
+                  for our four-month anniversary. I modeled it in Blender based
+                  on measurements from a similar injection molded version of the
+                  puzzle that was missing pieces.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <img
+                src="../images/puzzle-sphere/01.jpg"
+                alt="a 3D printed puzzle sphere on a stand"
+                class="entry-image-v"
+              />
+              <p class="caption">The puzzle sphere</p>
+            </div>
+          </div>
+          <!-- The Puzzle -->
+          <div class="sub-entry row-reverse" id="puzzle-sphere-1">
+            <div class="text-box">
+              <article>
+                <p>
+                  The most challenging part of the build was ensuring the pieces
+                  had enough clearance to assemble, but still fit together
+                  snugly.
+                </p>
+                <p>
+                  To determine the necessary adjustments, I printed and measured
+                  test parts. X and y-axes were consistently a fraction of a
+                  millimeter under nominal dimension, which was acceptable. The
+                  z-axis was printing about 3% too high, so I adjusted the scale
+                  of each piece accordingly, and with minimal sanding, the
+                  puzzle assembled.
+                </p>
+                <p>
+                  If I were to try printing it again, I might shrink each piece
+                  0.5% more, which may allow it to assemble without sanding.
+                  Alternatively, I might look into calibration software for my
+                  printer.
+                </p>
+              </article>
+            </div>
+            <div class="image-box">
+              <ul class="entry-gallery">
+                <li>
+                  <img
+                    src="../images/puzzle-sphere/02.jpg"
+                    alt="a disassembled puzzle sphere"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/puzzle-sphere/03.jpg"
+                    alt="a partially assembled puzzle sphere"
+                  />
+                </li>
+              </ul>
+              <p class="caption">
+                The puzzle, disassembled and partially assembled
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
