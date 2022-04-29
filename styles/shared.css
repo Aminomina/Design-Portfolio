@@ -211,6 +211,17 @@ footer a:hover {
   color: var(--color-gray-100);
 }
 
+/* Dingbat */
+#dingbat {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+#dingbat img {
+  width: 15rem;
+}
+
 /* Responsive View */
 @media (max-width: 59rem) {
   h1 a {
@@ -246,5 +257,11 @@ footer a:hover {
 
   .hero {
     display: none;
+  }
+}
+
+@media (max-width: 35rem) {
+  #dingbat img {
+    width: 10rem;
   }
 }
